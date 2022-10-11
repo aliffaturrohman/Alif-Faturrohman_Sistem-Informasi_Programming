@@ -1,0 +1,34 @@
+// NAMA		: Alif Faturrohman
+// NRP		: 5026221040
+// Jurusan	: Sistem Informasi
+
+#include <iostream>
+#include <cmath>
+
+#define GRAVITASI 10 //10 m/s^2
+#define START_PENGUKURAN 1 //pengukuran dimulai dari 1 meter
+#define SUDUT 45 //sudut elevasi tembakan
+
+int main() {
+    int v;
+    int jarak;
+    float vtangensial;
+    std::cin >> v;
+    switch(v){
+        case 1 ... 10:
+        v -= 1;
+        break;
+        case 11 ... 20:
+        v -= 3;
+        break;
+        case 21 ... 30:
+        v -= 5;
+        break;
+        
+    }
+
+    jarak = v*v/10;
+    vtangensial = sqrt(jarak*10)+5;
+    std::cout << jarak << vtangensial << std::endl;
+    return 0;
+}
